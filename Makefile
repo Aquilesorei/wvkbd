@@ -48,8 +48,8 @@ clean:
 format:
 	clang-format -i $(WVKBD_SOURCES) $(WVKBD_HEADERS)
 
-%: %.scd
-	$(SCDOC) < $< > $@
+#%: %.scd
+#	$(SCDOC) < $< > $@
 
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
